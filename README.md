@@ -1,15 +1,17 @@
-# 🩹 Armed Detective Agency: Internal Web Portal (agency_portal.py)
+#  Armed Detective Agency: Internal Web Portal (agency_portal.py)
+<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/c7d9612b-23ec-4202-92e7-b0dfbf3d6124" />
+
 
 An ultra-lightweight, native HTTP staging web server forged in the image of **Osamu Dazai**. Built explicitly for file transfer and data exfiltration during **CPTS** and **OSCP** environments where strict firewalls or endpoint configurations block raw outbound FTP/SMB traffic.
 
-## ⚡ Features
+##  Features
 
 *   **Zero-Dependency Evasion**: Leverages Python's native HTTP library architecture—requires no pip packages or compilation steps to run.
 *   **Bidirectional Control**: Seamlessly serves script inventories to targets via standard `GET` loops while processing data exfiltration via custom `POST` endpoints.
 *   **Path Traversal Hardening**: Built-in sanitization blocks incoming stream names from spilling outside your chosen local staging folder directory.
 *   **Low-Noise Logging**: Replaces confusing web daemon logs with clean indicators highlighting incoming file drops under operational pressure.
 
-## 🚀 Usage
+## Usage
 
 ```bash
 python agency_portal.py [-p <PORT>] [-d <DIRECTORY>]
@@ -21,7 +23,7 @@ python agency_portal.py [-p <PORT>] [-d <DIRECTORY>]
 
 ---
 
-## 🎯 Operational Deployments
+##  Operational Deployments
 
 ### Launching the Portal (Attacker Workstation)
 To stage a directory and catch incoming traffic on an evasion-friendly web port:
@@ -31,7 +33,7 @@ python agency_portal.py -p 8080 -d /home/kali/payload_staging
 
 ---
 
-## 💻 Interfacing with Targets (Victim-Side Commands)
+##  Interfacing with Targets (Victim-Side Commands)
 
 ### 1. Downloading Files to the Target (`GET`)
 
